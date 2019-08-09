@@ -1,0 +1,42 @@
+[
+  {
+    "code": 1,
+    "name": "Producto1",
+    "description": "descripcion",
+    "VAT": "SUPERREDUCTED",
+    "price": 5.0,
+    "qAvailable": 0,
+    "qSold": 0,
+    "category": "ALIMENTACION"
+  },
+  {
+    "code": 2,
+    "name": "Producto2",
+    "description": "descripcion",
+    "VAT": "SUPERREDUCTED",
+    "price": 5.0,
+    "qAvailable": 0,
+    "qSold": 0,
+    "category": "ALIMENTACION"
+  },
+  {
+    "code": 3,
+    "name": "Producto3",
+    "description": "descripcion",
+    "VAT": "SUPERREDUCTED",
+    "price": 5.0,
+    "qAvailable": 0,
+    "qSold": 0,
+    "category": "ALIMENTACION"
+  },
+  {
+    "code": 4,
+    "name": "Producto4",
+    "description": "descripcion",
+    "VAT": "SUPERREDUCTED",
+    "price": 5.0,
+    "qAvailable": 0,
+    "qSold": 0,
+    "category": "ALIMENTACION"
+  }
+]
