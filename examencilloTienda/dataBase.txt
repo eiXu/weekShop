@@ -1,41 +1,41 @@
 [
   {
     "code": 1,
-    "name": "Producto1",
-    "description": "descripcion",
+    "name": "Pe peee roni",
+    "description": "sabroso",
     "VAT": "SUPERREDUCTED",
-    "price": 5.0,
-    "qAvailable": 0,
+    "price": 4.0,
+    "qAvailable": 6,
     "qSold": 0,
     "category": "ALIMENTACION"
   },
   {
     "code": 2,
-    "name": "Producto2",
-    "description": "descripcion",
-    "VAT": "SUPERREDUCTED",
-    "price": 5.0,
-    "qAvailable": 0,
+    "name": "tostus",
+    "description": "muertos",
+    "VAT": "GENERAL",
+    "price": 7.0,
+    "qAvailable": 9,
     "qSold": 0,
-    "category": "ALIMENTACION"
+    "category": "LUJO"
   },
   {
     "code": 3,
-    "name": "Producto3",
-    "description": "descripcion",
-    "VAT": "SUPERREDUCTED",
+    "name": "lololo",
+    "description": "asdasd",
+    "VAT": "GENERAL",
     "price": 5.0,
-    "qAvailable": 0,
+    "qAvailable": 6,
     "qSold": 0,
-    "category": "ALIMENTACION"
+    "category": "MECANICO"
   },
   {
     "code": 4,
-    "name": "Producto4",
-    "description": "descripcion",
+    "name": "hola qu",
+    "description": "e tal",
     "VAT": "SUPERREDUCTED",
-    "price": 5.0,
-    "qAvailable": 0,
+    "price": 9.0,
+    "qAvailable": 5,
     "qSold": 0,
     "category": "ALIMENTACION"
   }

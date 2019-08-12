@@ -6,14 +6,14 @@ import es.eoi.weekShop.entities.Product;
 
 public interface ProductService {
 	
-	public boolean create();
+	public boolean create(Product newProduct);
 
-	public boolean update();
+	public boolean update(Integer index, Product newProduct);
 	
-	public Product read();
+	public List<Product> read(Product filter);
 	
 	public List<Product> readAll();
 	
-	public boolean delete();
+	public boolean delete(Product toDeleteProduct);
 
 }

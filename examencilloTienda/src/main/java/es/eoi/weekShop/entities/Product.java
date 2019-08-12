@@ -3,7 +3,7 @@ package es.eoi.weekShop.entities;
 import es.eoi.weekShop.enums.Category;
 import es.eoi.weekShop.enums.VAT;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
 	private Integer code;
 	private String name;
@@ -14,12 +14,12 @@ public class Product {
 	private Integer qSold;
 	private Category category;
 
-	public Product(String name, String description, Double price, Category category) {
+	public Product(String name, String description, Double price, Category category, Integer qAvailable) {
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.category = category;
-		this.qAvailable = 0;
+		this.qAvailable = qAvailable;
 		this.qSold = 0;
 
 		switch (category) {
@@ -110,6 +110,19 @@ public class Product {
 				code, name, description, VAT, price, qAvailable, qSold, category);
 	}
 
-	
-	
+	public int compareTo(Product p) {
+
+		int order;
+
+		if (this.getCode() > p.getCode()) {
+			order = 1;
+		} else if (this.getCode() < p.getCode()) {
+			order = -1;
+		} else {
+			order = 0;
+		}
+
+		return order;
+	}
+
 }

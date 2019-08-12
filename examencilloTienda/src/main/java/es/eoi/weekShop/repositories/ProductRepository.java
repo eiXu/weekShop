@@ -6,11 +6,11 @@ import es.eoi.weekShop.entities.Product;
 
 public interface ProductRepository {
 	
-	public boolean create(Product newProduct);
+	public void create(Product newProduct);
 
 	public boolean update(Integer index, Product newProduct);
 	
-	public Product read(Product filter);
+	public List<Product> read(Product filter);
 	
 	public List<Product> readAll();
 	
