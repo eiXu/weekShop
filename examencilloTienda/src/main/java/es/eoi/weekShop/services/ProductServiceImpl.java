@@ -71,6 +71,10 @@ public class ProductServiceImpl implements ProductService {
 			System.out.println("1.- Sí");
 			System.out.println("2.- No");
 			int option = Integer.parseInt(scan.nextLine());
+			// SI
+			//	Llamar menu que rellene el producto newProduct
+			// NO
+			//	Salir
 		}
 		
 		return exists;
