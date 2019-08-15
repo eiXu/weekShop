@@ -3,9 +3,7 @@ package es.eoi.weekShop.app;
 import java.util.List;
 
 import es.eoi.weekShop.entities.Product;
-import es.eoi.weekShop.enums.Category;
 import es.eoi.weekShop.menu.Menu;
-import es.eoi.weekShop.repositories.ProductRepository;
 import es.eoi.weekShop.services.ProductService;
 import es.eoi.weekShop.services.ProductServiceImpl;
 
@@ -17,6 +15,7 @@ public class myWeekShopApp {
 		Product product;
 		boolean isDone;
 		int option;
+		List<Product> products;
 
 		/*
 		 * Product p1 = new Product("Producto1", "descripcion", 5.0,
@@ -55,7 +54,7 @@ public class myWeekShopApp {
 		do {
 			option = Menu.mainMenu();
 			switch (option) {
-			case 1:
+			case 1:	// 
 				product = Menu.newProductMenu();
 				isDone = ps.create(product);
 				if (isDone) {
@@ -64,25 +63,29 @@ public class myWeekShopApp {
 					System.out.println("No se ha podido crear el producto porque ya existía");
 				}
 				break;
-			case 2:
+			case 2:	// READALL
 				mostrar(ps, ps.readAll());
 				break;
-			case 3:
+			case 3:	// READ
 				mostrar(ps, ps.read(Menu.findProductMenu()));
 				break;
-			case 4:
-				Product p = Menu.checkProductMenu();
-				if (ps.update(p.getCode(), p)) {
-					
+			case 4:	// UPDATE
+				product = Menu.checkProductMenu();
+				if (ps.update(product.getCode(), product)) {
+					System.out.println("Se ha actualizado con éxito");
 				} else {
-
+					System.out.println("No se ha podido actualizar");
 				}
 				break;
-			case 5:
+			case 5:	// BORRAR
+				ps.delete();
 				break;
-			case 6:
+			case 6:	// SELL
+				products = ps.read(Menu.checkProductMenu());
+				((ProductServiceImpl) ps).sell(products.get(0));
 				break;
-			case 7:
+			case 7:	// CHECK SOLD ITEMS
+				((ProductServiceImpl) ps).report();
 				break;
 			}
 		} while (option != 0);

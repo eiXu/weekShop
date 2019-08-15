@@ -14,6 +14,6 @@ public interface ProductService {
 	
 	public List<Product> readAll();
 	
-	public boolean delete(Product toDeleteProduct);
+	public boolean delete();
 
 }

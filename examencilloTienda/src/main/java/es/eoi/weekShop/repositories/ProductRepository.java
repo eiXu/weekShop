@@ -8,7 +8,7 @@ public interface ProductRepository {
 	
 	public void create(Product newProduct);
 
-	public boolean update(Integer index, Product newProduct);
+	public boolean update(Product newProduct);
 	
 	public List<Product> read(Product filter);
 	

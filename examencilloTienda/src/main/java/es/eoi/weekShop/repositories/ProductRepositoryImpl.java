@@ -36,20 +36,23 @@ public class ProductRepositoryImpl implements ProductRepository {
 
 	}
 
-	public boolean update(Integer index, Product newProduct) {
+	public boolean update(Product newProduct) {
 
 		boolean isUpdated = false;
+		Product toDelete = null;
 
 		List<Product> myProducts = readAll();
 
 		if (myProducts != null) {
 			for (Product p : myProducts) {
-				if (p.getName().equals(newProduct.getName()) || p.getCode() == index) {
-					myProducts.remove(p);
+				if (p.getName().equals(newProduct.getName()) || p.getCode() == newProduct.getCode()) {
+					// myProducts.remove(p);
+					toDelete = p;
+					break;
 				}
 			}
-			newProduct.setCode(index);
-			myProducts.remove(index - 1);
+			// myProducts.remove(newProduct.getCode() - 1);
+			myProducts.remove(toDelete);
 			myProducts.add(newProduct);
 			isUpdated = true;
 			writeJson(myProducts);
@@ -120,7 +123,6 @@ public class ProductRepositoryImpl implements ProductRepository {
 		for (Product p : myProducts) {
 			if (toDeleteProduct.getName().equals(p.getName())) {
 				toDeleteProduct = p;
-				System.out.println("El objeto: " + p + " ha sido borrado");
 				isDeleted = true;
 			}
 		}

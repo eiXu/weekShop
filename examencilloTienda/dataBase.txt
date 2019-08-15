@@ -5,38 +5,38 @@
     "description": "sabroso",
     "VAT": "SUPERREDUCTED",
     "price": 4.0,
-    "qAvailable": 6,
+    "qAvailable": 3,
+    "qSold": 3,
+    "category": "ALIMENTACION"
+  },
+  {
+    "code": 4,
+    "name": "Manzana",
+    "description": "Rica",
+    "VAT": "SUPERREDUCTED",
+    "price": 3.0,
+    "qAvailable": 5,
+    "qSold": 55,
+    "category": "ALIMENTACION"
+  },
+  {
+    "code": 5,
+    "name": "producto 1",
+    "description": "productooo",
+    "VAT": "SUPERREDUCTED",
+    "price": 11.0,
+    "qAvailable": 50,
     "qSold": 0,
     "category": "ALIMENTACION"
   },
   {
     "code": 2,
-    "name": "tostus",
-    "description": "muertos",
+    "name": "Movil",
+    "description": "telefono",
     "VAT": "GENERAL",
-    "price": 7.0,
-    "qAvailable": 9,
-    "qSold": 0,
+    "price": 55.0,
+    "qAvailable": 15,
+    "qSold": 15,
     "category": "LUJO"
-  },
-  {
-    "code": 3,
-    "name": "lololo",
-    "description": "asdasd",
-    "VAT": "GENERAL",
-    "price": 5.0,
-    "qAvailable": 6,
-    "qSold": 0,
-    "category": "MECANICO"
-  },
-  {
-    "code": 4,
-    "name": "hola qu",
-    "description": "e tal",
-    "VAT": "SUPERREDUCTED",
-    "price": 9.0,
-    "qAvailable": 5,
-    "qSold": 0,
-    "category": "ALIMENTACION"
   }
 ]
